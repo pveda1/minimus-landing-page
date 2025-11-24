@@ -7,6 +7,7 @@ import imgImage from "figma:asset/2242711475cf01ba32ef27340142848497975805.png";
 import imgImage1 from "figma:asset/2fd8af6969e2ec502b509d553334e6f01173cc27.png";
 import imgHeroData from "figma:asset/1ea9e073d7a80600447cc501bde41e284733550c.png";
 import { supabase } from "./lib/supabase";
+import './styles/globals.css'
 
 // Hook for scroll reveal animations
 function useScrollReveal() {
@@ -805,15 +806,6 @@ export default function Desktop() {
     setEmail('');
     setTimeout(() => setSubmitted(false), 3000);
   };
-
-  // const handleSubmit = () => {
-  //   if (email) {
-  //     setSubmitted(true);
-  //     alert(`Thank you for joining our waitlist! We'll contact you at ${email}`);
-  //     setEmail('');
-  //     setTimeout(() => setSubmitted(false), 3000);
-  //   }
-  // };
 
   return (
     <div className="bg-white relative size-full" data-name="Desktop">
