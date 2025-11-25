@@ -9,6 +9,7 @@ import imgHeroData from "figma:asset/1ea9e073d7a80600447cc501bde41e284733550c.pn
 import { supabase } from "./lib/supabase";
 import './styles/globals.css'
 
+
 // Hook for scroll reveal animations
 function useScrollReveal() {
   const ref = useRef<HTMLElement>(null);
@@ -75,6 +76,7 @@ function HeroHeader({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
       }`}
       data-name="Header"
     >
+
       <h1 className="block font-['Crimson_Text:Regular',sans-serif] leading-[0.9] min-w-full not-italic relative shrink-0 text-[160px] text-black text-center tracking-[-6.8px] w-[min-content]">minimus.</h1>
       <button 
         onClick={onJoinWaitlist}
@@ -826,6 +828,7 @@ export default function Desktop() {
           <NavItems1 onClick={scrollToSection} />
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
