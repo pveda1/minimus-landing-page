@@ -828,7 +828,6 @@ export default function Desktop() {
           <NavItems1 onClick={scrollToSection} />
         </div>
       </div>
-      <Analytics />
     </div>
   );
 }
