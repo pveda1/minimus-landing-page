@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import svgPaths from "./imports/svg-x9g7uldqq6";
 import svgPathsHero from "./imports/svg-0kpk6jl2yx";
 import imgGroup22 from "figma:asset/1cc6392ab3472df9fc591be68555352e29c6a7c2.png";
-import imgHeroImage from "figma:asset/e974b52cbe02dcd28bdd226829386a8d2687b66b.png";
+import imgHeroImage from "./assets/02.png";
 import imgImage from "figma:asset/2242711475cf01ba32ef27340142848497975805.png";
 import imgImage1 from "figma:asset/2fd8af6969e2ec502b509d553334e6f01173cc27.png";
 import imgHeroData from "figma:asset/1ea9e073d7a80600447cc501bde41e284733550c.png";
@@ -439,7 +439,7 @@ function Frame2() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
       <p className="font-['Crimson_Text:Regular',sans-serif] leading-none not-italic relative shrink-0 text-[18px] text-black tracking-[-0.54px] w-full">Match and Pay</p>
-      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#6f6f6f] text-[15px] tracking-[-0.075px] w-full" style={{ fontVariationSettings: "'opsz' 14" }}>{`minimus is priced on a per-match model, allowing our sellers to pay only as much as they need. `}</p>
+      <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#6f6f6f] text-[15px] tracking-[-0.075px] w-full" style={{ fontVariationSettings: "'opsz' 14" }}>{`minimus is priced on a $3 per-match model, allowing our sellers to pay only as much as they need. `}</p>
     </div>
   );
 }
@@ -620,7 +620,7 @@ function CenteredCta({ innerRef, email, setEmail, onSubmit }: { innerRef?: React
       <div className="flex flex-col items-center max-w-inherit size-full">
         <div className="box-border content-stretch flex flex-col gap-[40px] items-center max-w-inherit px-[300px] py-[120px] relative w-full">
           <p className="font-['Crimson_Text:Regular',sans-serif] leading-[0.9] min-w-full not-italic relative shrink-0 text-[60px] text-black text-center tracking-[-1.8px] w-[min-content]">Join the wait list.</p>
-          <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[1.4] min-w-full relative shrink-0 text-[#6f6f6f] text-[15px] text-center tracking-[-0.075px] w-[min-content]" style={{ fontVariationSettings: "'opsz' 14" }}>{`Be the first to hear when minimus is ready to be used by sellers like you. `}</p>
+          <p className="font-['DM_Sans:Regular',sans-serif] font-normal leading-[1.4] min-w-full relative shrink-0 text-[#6f6f6f] text-[15px] text-center tracking-[-0.075px] w-[min-content]" style={{ fontVariationSettings: "'opsz' 14" }}>Be the first to hear when minimus is ready to be used by sellers like you.<br /><strong>minimus is priced at $3 per per-match.</strong></p>
           <Frame email={email} setEmail={setEmail} onSubmit={onSubmit} />
         </div>
       </div>
